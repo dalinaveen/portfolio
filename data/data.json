@@ -1,0 +1,75 @@
+{
+  "education": {
+    "degree": "Bachelor of Technology (Computer Science & Engineering)",
+    "college": "Newtons Institute of Science & Technology",
+    "university": "Jawaharlal Nehru Technological University - Kakinada (JNTU-K)",
+    "year_of_completion": "2024",
+    "cgpa": "7.34 / 10"
+  },
+
+  "skills": {
+    "AI & Machine Learning": [
+      "Generative AI",
+      "RAG (Retrieval-Augmented Generation)",
+      "LangChain",
+      "LlamaIndex",
+      "Hugging Face Transformers",
+      "TensorFlow",
+      "PyTorch",
+      "scikit-learn"
+    ],
+    "Programming & Frameworks": [
+      "Python",
+      "Flask",
+      "FastAPI (basic)",
+      "Streamlit"
+    ],
+    "Tools & Libraries": [
+      "FAISS",
+      "Chroma",
+      "Pandas",
+      "NumPy",
+      "OpenAI API",
+      "Git / GitHub"
+    ],
+    "Data & Visualization": [
+      "Matplotlib",
+      "Excel",
+      "SQL"
+    ],
+    "Other Skills": [
+      "Prompt Engineering",
+      "RAG Optimization",
+      "LLM Fine-Tuning",
+      "Deployment (Flask / Streamlit)"
+    ]
+  },
+
+  "projects": [
+    {
+      "title": "AI Chatbot Development",
+      "description": "Developed an LLM-based chatbot that answers questions from uploaded PDF documents using a RAG pipeline built with LangChain, FAISS, and Hugging Face Transformers. It handles text chunking, embeddings, and retrieval for context-aware responses.",
+      "tech": ["Python", "LangChain", "FAISS", "Hugging Face", "Streamlit"]
+    },
+    {
+      "title": "AI Assistant for Knowledge Retrieval (RAG Pipeline)",
+      "description": "Built an AI assistant capable of searching and generating answers from internal documents using LangChain and LlamaIndex. Designed an interactive Streamlit interface for demos.",
+      "tech": ["LangChain", "LlamaIndex", "Python", "Streamlit"]
+    },
+    {
+      "title": "Text Summarization & Sentiment Analysis",
+      "description": "Created a summarization tool using Hugging Face Transformers to condense large documents and detect sentiment. Added keyword extraction and insight generation.",
+      "tech": ["Transformers", "NLP", "Python"]
+    },
+    {
+      "title": "Data Analytics & Automation",
+      "description": "Automated business data workflows using Python and Pandas. Designed reports, dashboards, and cleaned datasets for faster insights.",
+      "tech": ["Python", "Pandas", "NumPy", "Matplotlib"]
+    },
+    {
+      "title": "Flask Web Portfolio with AI Assistant",
+      "description": "Developed a Flask-based portfolio integrated with a Groq-powered AI assistant capable of natural language interactions.",
+      "tech": ["Flask", "Groq API", "HTML", "CSS", "JavaScript"]
+    }
+  ]
+}

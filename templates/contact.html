@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %}Contact | Dali Naveen{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
+
+<section class="contact-section">
+  <div class="contact-intro">
+    <h2>Contact Me</h2>
+    <p>
+      Have a project idea, a collaboration in mind, or just want to say hello?  
+      I’d love to connect! Feel free to reach out using the form below or contact me directly.
+    </p>
+  </div>
+
+  <div class="contact-container">
+    <!-- Contact Form -->
+    <form method="POST" action="/contact" class="contact-form">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <ul>
+        <li><strong>📍 Location:</strong> Bengaluru, India</li>
+        <li><strong>📞 Phone:</strong> +91 63005 11048</li>
+        <li><strong>📧 Email:</strong> dalinaveen1432@gmail.com</li>
+        <li><strong>🔗 LinkedIn:</strong> 
+          <a href="https://www.linkedin.com/in/naveen-dali-65654a283" target="_blank">linkedin.com/in/naveen-dali</a>
+        </li>
+        <li><strong>📷 Instagram:</strong> 
+          <a href="https://www.instagram.com/dali_naveen" target="_blank">@dali_naveen</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+{% endblock %}

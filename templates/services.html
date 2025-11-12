@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block title %}Services | Dali Naveen{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/services.css') }}">
+
+<section class="services-section">
+  <div class="services-intro">
+    <h2>My Projects</h2>
+    <p>
+      I design and develop intelligent AI-powered solutions that automate processes,
+      and improve user experience through smart data and
+      Generative AI systems.
+    </p>
+  </div>
+
+  <div class="services-grid">
+
+    <div class="service-card">
+      <div class="icon">🤖</div>
+      <h3>AI Chatbot Development</h3>
+      <p>
+        Custom-built conversational agents using <strong>Flask</strong>, 
+        <strong>LangChain</strong>, and <strong>LlamaIndex</strong> to deliver 
+        seamless and intelligent user interaction.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">🧠</div>
+      <h3>Generative AI Solutions</h3>
+      <p>
+        Implementing <strong>LLM</strong>-powered tools and <strong>RAG</strong> systems 
+        using <strong>OpenAI</strong> and <strong>Hugging Face</strong> for text generation, 
+        Q&A, and summarization.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">📊</div>
+      <h3>Data Analytics & Visualization</h3>
+      <p>
+        Data processing, cleaning, and dashboard building with 
+        <strong>Power BI</strong>, <strong>Python</strong>, and <strong>SQL</strong> 
+        for data-driven insights.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">⚙️</div>
+      <h3>Automation with Python</h3>
+      <p>
+        Automating repetitive business tasks and workflows using Python scripting, 
+        APIs, and AI integrations to improve efficiency.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">🌐</div>
+      <h3>Flask Web App Development</h3>
+      <p>
+        Lightweight, fast, and scalable web applications built using 
+        <strong>Flask</strong> and <strong>Bootstrap</strong> with AI integration.
+      </p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">🧩</div>
+      <h3>Custom AI Integrations</h3>
+      <p>
+        Connecting AI models to business systems via REST APIs and 
+        cloud-based integrations using <strong>LangChain</strong> and <strong>OpenAI API</strong>.
+      </p>
+    </div>
+
+  </div>
+</section>
+{% endblock %}

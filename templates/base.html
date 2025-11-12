@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Dali Naveen | Portfolio{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <!-- 🌐 Navbar -->
+  <nav class="navbar">
+    <div class="logo">Dali Naveen</div>
+    <ul class="nav-links">
+      <li><a href="{{ url_for('home') }}">Home</a></li>
+      <li><a href="{{ url_for('about') }}">About</a></li>
+      <li><a href="{{ url_for('services') }}">Services</a></li>
+      <li><a href="{{ url_for('contact') }}">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- 🧱 Page Content -->
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
+
+  <!-- ⚙️ Footer -->
+  <footer class="footer">
+    <p>© 2025 Dali Naveen | Python & Generative AI Developer</p>
+  </footer>
+<!-- Chatbot Widget -->
+<div class="chatbot-container" id="chatbot" style="display: none;">
+  <div class="chatbot-header">
+    <h4>AI Assistant 🤖</h4>
+    <button id="closeChat">×</button>
+  </div>
+  <div class="chatbot-body" id="chatBox">
+    <div class="bot-message">Hi! I’m your AI Assistant. How can I help you today?</div>
+  </div>
+  <div class="chatbot-input">
+    <input type="text" id="userInput" placeholder="Type a message..." />
+    <button id="sendBtn" onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+<!-- Chatbot Widget -->
+<div class="chatbot-container" id="chatbot" style="display: none;">
+  <div class="chatbot-header">
+    <h4>AI Assistant 🤖</h4>
+    <button id="closeChat">×</button>
+  </div>
+
+  <div class="chatbot-body" id="chatBox">
+    <div class="bot-message">Hi! I’m your AI Assistant. How can I help you today?</div>
+  </div>
+
+  <div class="chatbot-input">
+    <input type="text" id="userInput" placeholder="Type a message..." />
+    <button id="sendBtn">Send</button>
+  </div>
+</div>
+
+<!-- Floating Chat Button -->
+<div class="chatbot-toggle" id="chatToggle">💬</div>
+
+
+<script src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='chatbot.css') }}">
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+
+{% block title %}About | Dali Naveen{% endblock %}
+
+{% block content %}
+
+<section class="about-section">
+  <div class="intro">
+    <h2>About Me</h2>
+    <p>
+      I'm <strong>Dali Naveen</strong> — an <strong>AI Engineer</strong> and <strong>Python Developer</strong> passionate about
+      <strong>Generative AI</strong>, <strong>Chatbot Development</strong>, and <strong>RAG pipelines</strong>.
+      I specialize in building AI-driven systems that automate workflows and deliver human-like conversational experiences.
+    </p>
+  </div>
+
+  <!-- Personal Info + Image -->
+  <div class="about-grid">
+    <div class="profile">
+      <img src="{{ url_for('static', filename='naveen.jpg') }}" alt="Dali Naveen">
+    </div>
+
+    <div class="about-details">
+      <h3>Personal Information</h3>
+      <ul>
+        <li><strong>Full Name:</strong> Dali Naveen</li>
+        <li><strong>Role:</strong> AI Engineer | Data Analyst | Prompt Engineer</li>
+        <li><strong>Location:</strong> Bengaluru, India</li>
+        <li><strong>Email:</strong> dalinaveen1432@gmail.com</li>
+        <li><strong>Phone:</strong> +91 63005 11048</li>
+        <li><strong>Languages:</strong> English, Telugu (Native)</li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/naveen-dali-65654a283" target="_blank">linkedin.com/in/naveen-dali</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/dalinaveen" target="_blank">github.com/dalinaveen</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Education -->
+  <div class="education-section">
+    <h3>Education</h3>
+    <div class="education-card">
+      <h4>Bachelor of Technology (Computer Science & Engineering)</h4>
+      <p><strong>Newtons Institute of Science & Technology</strong> — JNTU-K (2024)</p>
+      <p>CGPA: 7.34 / 10</p>
+    </div>
+  </div>
+
+  <!-- Experience -->
+  <div class="experience-section">
+    <h3>Projects</h3>
+
+    <div class="experience-card">
+      <div class="timeline"></div>
+      <h4>AI Chatbot Development</h4>
+      <ul>
+        <li>Developed an <strong> LLM-based chatbot</strong> capable of answering questions directly from uploaded <strong> PDF documents</strong>.</li>
+        <li>Built a complete <strong>Retrieval-Augmented Generation (RAG)</strong> pipeline using<strong> LangChain, FAISS,</strong> and <strong> Hugging Face Transformers </strong>for semantic search and context retrieval.</li>
+        <li>Created backend logic for <strong>text chunking, embedding generation, and query retrieval </strong>with seamless integration into Streamlit UI.</li>
+        <li>Enabled accurate and context-aware responses using<strong> custom prompt engineering </strong>and local vector database storage.</li>
+        <li><strong>Tech Stack:</strong> Python, LangChain, FAISS, Hugging Face, Streamlit</li>
+      </ul>
+    </div>
+
+    <div class="experience-card">
+      <div class="timeline"></div>
+      <h4>AI Assistant for Knowledge Retrieval(RAG Pipeline)</h4>
+    
+      <ul>
+        <li>Designed a RAG-based AI assistant capable of searching and generating responses from internal knowledge bases.</li>
+        <li>Used <strong>LangChain + LlamaIndex</strong> for document retrieval and context-aware response generation</li>
+        <li>Created a Streamlit interface for easy interaction and demonstration</li>
+      </ul>
+    </div>
+    <div class="experience-card">
+      <div class="timeline"></div>
+      <h4>Text Summarization and Sentiment Analysis using Hugging Face</h4>
+      <ul>
+        <li>Created an AI-powered application to summarize lengthy documents and extract key sentiments using Hugging Face Transformers</li>
+        <li>Enhanced the tool with keyword extraction and insight generation features for better readability</li>
+        
+      </ul>
+    </div>
+  </div>
+
+  <!-- Skills -->
+    <div class="skills-section">
+    <h3>Technical Skills</h3>
+
+    <div class="skill-category">
+      <h4>🧠 AI & Machine Learning</h4>
+      <div class="skills">
+        <div class="skill">Generative AI</div>
+        <div class="skill">RAG</div>
+        <div class="skill">LangChain</div>
+        <div class="skill">LlamaIndex</div>
+        <div class="skill">Hugging Face</div>
+        <div class="skill">TensorFlow</div>
+        <div class="skill">PyTorch</div>
+        <div class="skill">scikit-learn</div>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h4>💻 Programming & Frameworks</h4>
+      <div class="skills">
+        <div class="skill">Python</div>
+        <div class="skill">Flask</div>
+        <div class="skill">Streamlit</div>
+        <div class="skill">Fast APIs (basic)</div>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h4>🧩 Tools & Libraries</h4>
+      <div class="skills">
+        <div class="skill">FAISS</div>
+        <div class="skill">Chroma</div>
+        <div class="skill">Pandas</div>
+        <div class="skill">NumPy</div>
+        <div class="skill">OpenAI API</div>
+        <div class="skill">Git / GitHub</div>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h4>📊 Data & Visualization</h4>
+      <div class="skills">
+        <div class="skill">Matplotlib</div>
+        <div class="skill">Excel</div>
+        <div class="skill">SQL</div>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h4>⚙️ Other Skills</h4>
+      <div class="skills">
+        <div class="skill">Prompt Engineering</div>
+        <div class="skill">RAG Optimization</div>
+        <div class="skill">LLM Fine-Tuning</div>
+        <div class="skill">Deployment (Flask / Streamlit)</div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
